@@ -22,4 +22,4 @@ imap <C-c> <esc>:w<CR>
 " Emacs-like bindings
 imap <C-a> <C-o>^
 imap <C-e> <C-o>$
-imap <C-u> <C-o>dd
+imap <C-u> <esc>d^xi
