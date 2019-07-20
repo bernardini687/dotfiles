@@ -1,4 +1,3 @@
-# $HOME/code/greet $USER
 alias la='ls -A'                       # Don't list . and ..
 alias lal='ls -Alh'                    # List human-readable details
 alias lar='ls -hArtl'                  # List sorting by last changes
