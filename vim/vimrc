@@ -1,0 +1,16 @@
+syntax on
+
+set number
+set expandtab
+set tabstop=2 shiftwidth=2
+set softtabstop=2
+set scrolloff=4                        " At least 4 lines below the cursor
+set nobackup                           " No swap files
+
+let mapleader = "\<Space>"             " Change the leader character
+nmap <leader>vr :tabedit $MYVIMRC<CR>
+nmap <leader>sr :source $MYVIMRC<CR>
+nmap <leader>sa ggVG                   " Select the entire buffer
+
+map <C-c> <esc>:w<CR>
+nmap 0 ^
