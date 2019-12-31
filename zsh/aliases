@@ -58,7 +58,3 @@ alias b='brew'
 # git
 #
 alias g='git'
-alias -g a='add'
-alias -g st='status'
-alias -g ci='commit'
-alias -g p='push'
