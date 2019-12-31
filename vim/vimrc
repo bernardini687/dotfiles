@@ -1,25 +1,18 @@
 syntax on
 
-set number
 set expandtab
 set tabstop=2 shiftwidth=2
 set softtabstop=2
-set scrolloff=4                        " At least 4 lines below the cursor
-set nobackup                           " No swap files
+set scrolloff=4                       " At least 4 lines below the cursor
+set nobackup                          " No swap files
+set noswapfile
+set backspace=2                       " Backspace deletes in insert mode
 
 nmap 0 ^
-nmap <C-k> dd2kp                       " Move line up
-nmap <C-j> ddp                         " Move line down
 
-let mapleader = "\<Space>"             " Change the leader character
-nmap <leader>vr :tabedit $MYVIMRC<CR>
-nmap <leader>sr :source $MYVIMRC<CR>
-nmap <leader>sa ggVG                   " Select the entire buffer
+let mapleader = "\<Space>"            " Change the leader character
+nmap <leader>sa ggVG                  " Select the entire buffer
 
 map <C-c> <esc>:w<CR>
 imap <C-c> <esc>:w<CR>
 
-" Emacs-like bindings
-imap <C-a> <C-o>^
-imap <C-e> <C-o>$
-imap <C-u> <esc>d^xi
