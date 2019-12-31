@@ -1,0 +1,64 @@
+#
+# misc
+#
+alias src='source ~/.aliases'
+alias srb='irb --simple-prompt'
+alias -g ulb='/usr/local/bin'
+alias path='echo $PATH | tr -s ":" "\n"'
+
+#
+# ls
+#
+alias ls='ls -G'
+alias ll='ls -Al'
+alias lr='ls -hArtl'
+
+#
+# cd
+#
+alias ..='cd ..'
+alias ...='cd ../..'
+
+cl() {
+  if [ -n "$1" ]
+  then
+    cd "$1" && ls
+  else
+    cd && ls
+  fi
+}
+
+#
+# dir hist
+#
+alias d='dirs -v | tail -n +2 | head -5'
+alias 1='~1'
+alias 2='~2'
+alias 3='~3'
+alias 4='~4'
+alias 5='~5'
+
+#
+# grep
+#
+alias grep='grep -i --color --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
+
+#
+# pipe
+#
+alias -g G='| grep'
+alias -g S='| tr -s'
+
+#
+# brew
+#
+alias b='brew'
+
+#
+# git
+#
+alias g='git'
+alias -g a='add'
+alias -g st='status'
+alias -g ci='commit'
+alias -g p='push'

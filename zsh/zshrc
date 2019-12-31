@@ -1,0 +1,53 @@
+#
+# have a nice prompt, will ya?
+#
+
+export PROMPT='%(?.%B%F{green}%1~.%F{red}%1~) %#%f%b ' # green on success and
+export RPROMPT='%T'                                    # time to the right, yo.
+
+#
+# let's set some typing-friendly options!
+#
+
+setopt autopushd
+setopt correct
+setopt correct_all
+setopt extendedglob
+setopt no_case_glob
+setopt pushdignoredups
+
+#
+# essential history options.
+#
+
+export HISTSIZE=7000          # set history size.
+export SAVEHIST=7000          # save history on logout.
+
+setopt HIST_EXPIRE_DUPS_FIRST # expire duplicates first.
+setopt HIST_FIND_NO_DUPS      # ignore duplicates when searching.
+setopt HIST_IGNORE_DUPS       # don't save duplications.
+setopt HIST_IGNORE_SPACE      # don't save commands starting with space.
+setopt HIST_REDUCE_BLANKS     # removes blank lines from history.
+setopt HIST_VERIFY
+setopt INC_APPEND_HISTORY
+
+#
+# vim-like line editor!
+#
+
+bindkey -v
+bindkey '^A' vi-beginning-of-line
+bindkey '^E' vi-end-of-line
+bindkey '^R' history-incremental-search-backward
+
+#
+# import the aliases.
+#
+
+source ~/.aliases
+
+#
+# to get asdf installation's shims:
+#
+
+. /usr/local/opt/asdf/asdf.sh
