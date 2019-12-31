@@ -1,3 +1,22 @@
+[alias]
+  a = add
+  st = status
+  ci = commit
+  p = push
+  co = checkout
+  br = branch
+  lol = log --oneline
+
+[core]
+  excludesfile = ~/.gitignore
+  autocrlf = input
+
+[help]
+  autocorrect = 1
+
+[merge]
+  ff = only
+
 [user]
   email = bernardini687@gmail.com
   name = oscar bernardini
