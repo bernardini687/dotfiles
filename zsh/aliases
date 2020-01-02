@@ -29,16 +29,6 @@ cl() {
 }
 
 #
-# dir hist
-#
-alias d='dirs -v | tail -n +2 | head -5'
-alias 1='~1'
-alias 2='~2'
-alias 3='~3'
-alias 4='~4'
-alias 5='~5'
-
-#
 # grep
 #
 alias grep='grep -i --color --exclude-dir={.bzr,CVS,.git,.hg,.svn}'

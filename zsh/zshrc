@@ -7,12 +7,8 @@ prompt pure
 #
 # general options
 #
-setopt autopushd
-setopt correct
-setopt correct_all
 setopt extendedglob
 setopt no_case_glob
-setopt pushdignoredups
 
 #
 # history options
