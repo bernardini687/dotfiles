@@ -58,3 +58,4 @@ alias b='brew'
 # git
 #
 alias g='git'
+alias initrepo='git add . && git commit -m "init repo"'
