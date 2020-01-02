@@ -1,7 +1,8 @@
 #
-# green on success
+# prompt
 #
-export PROMPT='%(?.%B%F{green}%1~.%F{red}%1~) %#%f%b '
+autoload -U promptinit; promptinit
+prompt pure
 
 #
 # general options
@@ -12,17 +13,6 @@ setopt correct_all
 setopt extendedglob
 setopt no_case_glob
 setopt pushdignoredups
-
-#
-# git options
-#
-autoload -Uz vcs_info
-precmd_vcs_info() { vcs_info }
-precmd_functions+=( precmd_vcs_info )
-setopt prompt_subst
-RPROMPT=\$vcs_info_msg_0_
-zstyle ':vcs_info:git:*' formats '%b' # current branch name.
-zstyle ':vcs_info:*' enable git
 
 #
 # history options
