@@ -45,6 +45,11 @@ alias -g S='| tr -s'
 alias b='brew'
 
 #
+# bundle
+#
+alias be='bundle exec'
+
+#
 # git
 #
 alias g='git'
