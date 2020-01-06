@@ -5,6 +5,7 @@ alias src='source ~/.aliases'
 alias srb='irb --simple-prompt'
 alias -g ulb='/usr/local/bin'
 alias path='echo $PATH | tr -s ":" "\n"'
+alias fsl="echo '# frozen_string_literal: true' | pbcopy"
 
 #
 # ls
