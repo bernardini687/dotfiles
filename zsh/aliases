@@ -39,6 +39,7 @@ alias grep='grep -i --color --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
 #
 alias -g G='| grep'
 alias -g S='| tr -s'
+alias -g L='| wc -l'
 
 #
 # brew
