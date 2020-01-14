@@ -2,6 +2,8 @@
 # misc
 #
 alias src='source ~/.aliases'
+alias dota='vim ~/.aliases'
+alias etch='sudo vim /etc/hosts'
 alias srb='irb --simple-prompt'
 alias -g ulb='/usr/local/bin'
 alias path='echo $PATH | tr -s ":" "\n"'
