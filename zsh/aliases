@@ -48,6 +48,7 @@ alias -g L='| wc -l'
 # brew
 #
 alias b='brew'
+alias pgreboot='rm /usr/local/var/postgres/postmaster.pid && brew services restart postgresql'
 
 #
 # bundle
