@@ -1,13 +1,12 @@
 [alias]
   a = add
   s = status -s
-  st = status
   d = diff
-  c = commit
+  c = commit -m
   p = push
   co = checkout
   br = branch
-  lol = log --oneline
+  l = log --oneline
 
 [core]
   excludesfile = ~/.gitignore
