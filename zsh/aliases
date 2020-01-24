@@ -65,3 +65,11 @@ alias be='bundle exec'
 #
 alias g='git'
 alias initrepo='git add . && git commit -m "init repo"'
+
+#
+# docker
+#
+alias d='docker'
+alias dc='docker-compose'
+alias dv='docker volume'
+alias di='docker images'
