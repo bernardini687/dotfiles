@@ -8,7 +8,7 @@ alias srb='irb --simple-prompt'
 alias -g ulb='/usr/local/bin'
 alias path='echo $PATH | tr -s ":" "\n"'
 alias fsl="echo '# frozen_string_literal: true' | pbcopy"
-alias tools='cat ~/.tool-versions > .tool-versions'
+alias tools='[[ $(pwd) != ~ ]] && cat ~/.tool-versions > .tool-versions'
 
 #
 # apps
