@@ -11,6 +11,11 @@ alias fsl="echo '# frozen_string_literal: true' | pbcopy"
 alias tools='cat ~/.tool-versions > .tool-versions'
 
 #
+# apps
+#
+alias chrome='open -n /Applications/Google\ Chrome.app --args --incognito'
+
+#
 # ls
 #
 alias ls='ls -G'
