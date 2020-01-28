@@ -13,7 +13,8 @@ alias tools='[[ $(pwd) != ~ ]] && cat ~/.tool-versions > .tool-versions'
 #
 # apps
 #
-alias chrome='open -n /Applications/Google\ Chrome.app --args --incognito'
+alias ichrome='open -a /Applications/Google\ Chrome.app --args --incognito --disable-login-animations --disable-sync'
+alias lclhst='f() { open -a /Applications/Google\ Chrome.app http://localhost:$1 --args --incognito --disable-login-animations --disable-sync };f'
 
 #
 # ls
