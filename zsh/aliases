@@ -7,8 +7,12 @@ alias etch='sudo vim /etc/hosts'
 alias srb='irb --simple-prompt'
 alias -g ulb='/usr/local/bin'
 alias path='echo $PATH | tr -s ":" "\n"'
-alias fsl="echo '# frozen_string_literal: true' | pbcopy"
 alias tools='[[ $(pwd) != ~ ]] && cat ~/.tool-versions > .tool-versions'
+
+#
+# ruby
+#
+alias fsl="echo '# frozen_string_literal: true' | pbcopy"
 
 #
 # apps
@@ -66,7 +70,7 @@ alias be='bundle exec'
 # git
 #
 alias g='git'
-alias initrepo='git add . && git commit -m "init repo"'
+alias initrepo='git init && git add . && git commit -m "init repo"'
 
 #
 # docker
