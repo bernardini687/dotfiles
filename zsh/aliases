@@ -2,7 +2,8 @@
 # misc
 #
 alias src='source ~/.aliases'
-alias dota='vim ~/.aliases'
+alias vima='vim ~/.aliases'
+alias cata='cat ~/.aliases'
 alias etch='sudo vim /etc/hosts'
 alias srb='irb --simple-prompt'
 alias -g ulb='/usr/local/bin'
@@ -17,8 +18,8 @@ alias fsl="echo '# frozen_string_literal: true' | pbcopy"
 #
 # apps
 #
-alias ichrome='open -a /Applications/Google\ Chrome.app --args --incognito --disable-login-animations --disable-sync'
-alias lclhst='f() { open -a /Applications/Google\ Chrome.app http://localhost:$1 --args --incognito --disable-login-animations --disable-sync };f'
+alias ichrome='open -a "Google Chrome" --args --incognito --disable-login-animations --disable-sync $1'
+alias lclhst='f() { open -a "Google Chrome" --args --incognito --disable-login-animations --disable-sync http://localhost:$1 };f'
 
 #
 # ls
