@@ -21,3 +21,6 @@
 [user]
   email = bernardini687@gmail.com
   name = oscar bernardini
+
+[hub]
+	protocol = ssh
