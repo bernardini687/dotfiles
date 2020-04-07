@@ -4,7 +4,7 @@ Phoenix.set({
 })
 
 function golden (length) {
-  return Math.round((61.8 / 100) * length)
+  return Math.round((80 / 100) * length)
 }
 
 function goldenFrame (percentage) {

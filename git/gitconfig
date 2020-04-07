@@ -7,13 +7,11 @@
   co = checkout
   br = branch
   l = log --oneline
+  pick = cherry-pick
 
 [core]
   excludesfile = ~/.gitignore
   autocrlf = input
-
-[help]
-  autocorrect = 1
 
 [merge]
   ff = only
@@ -24,3 +22,4 @@
 
 [hub]
 	protocol = ssh
+
