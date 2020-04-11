@@ -1,26 +1,53 @@
 Phoenix.set({
   daemon: true,
-  openAtLogin: true
-})
+  openAtLogin: true,
+});
 
-function golden (length) {
-  return Math.round((80 / 100) * length)
+function percent(length, amount) {
+  return Math.round((amount / 100) * length);
 }
 
-function goldenFrame (percentage) {
-  const { width, height } = Screen.main().frame()
-
-  const goldenWidth = golden(width)
-  const goldenHeight = golden(height)
+function centerFrame(percentage) {
+  const { width: screenW, height: screenH } = Screen.main().frame();
+  const width = percent(screenW, percentage);
+  const height = percent(screenH, percentage);
 
   return {
-    x: width / 2 - goldenWidth / 2,
-    y: height / 2 - goldenHeight / 2,
-    width: goldenWidth,
-    height: goldenHeight
-  }
+    x: screenW / 2 - width / 2,
+    y: screenH / 2 - height / 2,
+    width,
+    height,
+  };
 }
 
-const goldenWindow = new Key('f', ['control', 'shift'], () => {
-  Window.focused().setFrame(goldenFrame())
-})
+// type Position = 'left' | 'right'
+function halfFrame(position) {
+  const { width: screenW, height } = Screen.main().frame();
+  const width = screenW / 2;
+  const x = position === 'left' ? 0 : width;
+
+  return {
+    x,
+    y: 0,
+    width,
+    height,
+  };
+}
+
+/* * * HANDLERS * * */
+const leftWindow = new Key('q', ['control', 'shift'], () => {
+  Window.focused().setFrame(halfFrame('left'));
+});
+const rightWindow = new Key('w', ['control', 'shift'], () => {
+  Window.focused().setFrame(halfFrame('right'));
+});
+
+const smallWindow = new Key('a', ['control', 'shift'], () => {
+  Window.focused().setFrame(centerFrame(40));
+});
+const mediumWindow = new Key('s', ['control', 'shift'], () => {
+  Window.focused().setFrame(centerFrame(80));
+});
+const maxWindow = new Key('d', ['control', 'shift'], () => {
+  Window.focused().setFrame(centerFrame(100));
+});
