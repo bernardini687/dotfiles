@@ -46,7 +46,7 @@ const smallWindow = new Key('a', ['control', 'shift'], () => {
   Window.focused().setFrame(centerFrame(40));
 });
 const mediumWindow = new Key('s', ['control', 'shift'], () => {
-  Window.focused().setFrame(centerFrame(80));
+  Window.focused().setFrame(centerFrame(76));
 });
 const maxWindow = new Key('d', ['control', 'shift'], () => {
   Window.focused().setFrame(centerFrame(100));
