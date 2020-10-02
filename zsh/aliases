@@ -13,16 +13,12 @@ alias phnx='sublime ~/.phoenix.js'
 alias phnxl='log stream --process Phoenix'
 
 #
-# ruby
-#
-alias fsl="echo '# frozen_string_literal: true' | pbcopy"
-
-#
 # apps
 #
 alias ichrome='open -a "Google Chrome" --args --incognito --disable-login-animations --disable-sync $1'
 alias lclhst='f() { open -a "Google Chrome" --args --incognito --disable-login-animations --disable-sync http://localhost:$1 };f'
 alias wtl='sudo /Applications/wtl.app/Contents/MacOS/wtl'
+alias lzd='lazydocker' 
 
 #
 # ls
