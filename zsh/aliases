@@ -11,6 +11,7 @@ alias path='echo $PATH | tr -s ":" "\n"'
 alias tools='[[ $(pwd) != ~ ]] && cat ~/.tool-versions > .tool-versions'
 alias phnx='sublime ~/.phoenix.js'
 alias phnxl='log stream --process Phoenix'
+alias j='vim ~/Documents/write/journal/$(date "+%Y_%m_%d.txt")'
 
 #
 # apps
@@ -18,7 +19,6 @@ alias phnxl='log stream --process Phoenix'
 alias ichrome='open -a "Google Chrome" --args --incognito --disable-login-animations --disable-sync $1'
 alias lclhst='f() { open -a "Google Chrome" --args --incognito --disable-login-animations --disable-sync http://localhost:$1 };f'
 alias wtl='sudo /Applications/wtl.app/Contents/MacOS/wtl'
-alias lzd='lazydocker' 
 
 #
 # ls
@@ -72,14 +72,7 @@ alias initrepo='git init && git add . && git commit -m "init repo"'
 #
 alias d='docker'
 alias dc='docker-compose'
-alias dv='docker volume'
-alias di='docker images'
-alias de='docker exec'
-
-#
-# containers
-#
-alias rabbit='docker run -d --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-management'
+alias dvr='docker volume ls -qf dangling=true | xargs -r docker volume rm'
 
 #
 # npm
