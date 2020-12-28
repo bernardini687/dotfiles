@@ -1,16 +1,9 @@
 #
 # misc
 #
-alias src='source ~/.aliases'
-alias vima='vim ~/.aliases'
-alias cata='cat ~/.aliases'
-alias etch='sudo vim /etc/hosts'
-alias srb='irb --simple-prompt'
-alias -g ulb='/usr/local/bin'
+alias -g a='~/.aliases'
 alias path='echo $PATH | tr -s ":" "\n"'
-alias tools='[[ $(pwd) != ~ ]] && cat ~/.tool-versions > .tool-versions'
-alias phnx='sublime ~/.phoenix.js'
-alias phnxl='log stream --process Phoenix'
+alias debug_phoenix='log stream --process Phoenix'
 alias j='vim ~/Documents/write/journal/$(date "+%Y_%m_%d.txt")'
 
 #
@@ -18,13 +11,11 @@ alias j='vim ~/Documents/write/journal/$(date "+%Y_%m_%d.txt")'
 #
 alias ichrome='open -a "Google Chrome" --args --incognito --disable-login-animations --disable-sync $1'
 alias lclhst='f() { open -a "Google Chrome" --args --incognito --disable-login-animations --disable-sync http://localhost:$1 };f'
-alias wtl='sudo /Applications/wtl.app/Contents/MacOS/wtl'
 
 #
 # ls
 #
 alias ls='ls -G'
-alias ll='ls -Al'
 alias lr='ls -hArtl'
 
 #
@@ -42,19 +33,15 @@ alias grep='grep -i --color --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
 # pipes
 #
 alias -g G='| grep'
-alias -g S='| tr -s'
 alias -g L='| wc -l'
 alias -g C='| pbcopy'
 alias -g T='| tail'
 alias -g H='| head'
-alias -g J='| jq'
-alias -g SS='| less'
 
 #
 # brew
 #
 alias b='brew'
-alias pgreboot='rm /usr/local/var/postgres/postmaster.pid && brew services restart postgresql'
 
 #
 # bundle
@@ -72,7 +59,7 @@ alias initrepo='git init && git add . && git commit -m "init repo"'
 #
 alias d='docker'
 alias dc='docker-compose'
-alias dvr='docker volume ls -qf dangling=true | xargs -r docker volume rm'
+alias dvr='docker volume ls -qf dangling=true | xargs docker volume rm'
 
 #
 # npm

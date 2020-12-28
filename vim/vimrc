@@ -10,9 +10,3 @@ set backspace=2                       " Backspace deletes in insert mode
 
 nmap 0 ^
 
-let mapleader = "\<Space>"            " Change the leader character
-nmap <leader>sa ggVG                  " Select the entire buffer
-
-map <C-c> <esc>:w<CR>
-imap <C-c> <esc>:w<CR>
-
