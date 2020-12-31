@@ -1,6 +1,14 @@
 #
+# nvm 
+#
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+#
 # prompt
 #
+fpath+=$HOME/.zsh/pure
 autoload -U promptinit; promptinit
 prompt pure
 
@@ -27,10 +35,10 @@ setopt INC_APPEND_HISTORY
 #
 # line editor options
 #
-bindkey -v
-bindkey '^A' vi-beginning-of-line
-bindkey '^E' vi-end-of-line
-bindkey '^R' history-incremental-search-backward
+# bindkey -v
+# bindkey '^A' vi-beginning-of-line
+# bindkey '^E' vi-end-of-line
+# bindkey '^R' history-incremental-search-backward
 
 #
 # aliases
@@ -38,20 +46,15 @@ bindkey '^R' history-incremental-search-backward
 source ~/.aliases
 
 #
-# asdf shims
-#
-. /usr/local/opt/asdf/asdf.sh
-
-#
 # syntax highlighting
 #
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 #
 # start-up programs
 #
-export PALS_DAYS=10
-pals
+# export PALS_DAYS=10
+# pals
 
 #
 # completion
@@ -60,8 +63,13 @@ autoload -U compinit
 compinit
 
 #
-# path add-ons
+# rbenv
 #
-export PATH="/usr/local/opt/qt/bin:$PATH"
-export PATH="/Users/oscar/.deno/bin:$PATH"
-[ -f "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env" ] && source "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env"
+eval "$(rbenv init -)"
+
+# 
+# deno
+#
+export DENO_INSTALL="/Users/oscar/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
+

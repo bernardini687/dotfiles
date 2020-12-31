@@ -1,7 +1,7 @@
 #
 # misc
 #
-alias -g a='~/.aliases'
+alias -g ali='~/.aliases'
 alias path='echo $PATH | tr -s ":" "\n"'
 alias debug_phoenix='log stream --process Phoenix'
 alias j='vim ~/Documents/write/journal/$(date "+%Y_%m_%d.txt")'
