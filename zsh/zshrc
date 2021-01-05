@@ -21,13 +21,13 @@ setopt no_case_glob
 #
 # history options
 #
-export HISTSIZE=7000
-export SAVEHIST=7000 # max save history on logout.
+export HISTSIZE=8192
+export SAVEHIST=8192 # max save history on logout
 
-setopt HIST_EXPIRE_DUPS_FIRST
-setopt HIST_FIND_NO_DUPS
-setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_IGNORE_SPACE
+setopt HIST_NO_FUNCTIONS
+setopt HIST_NO_STORE
 setopt HIST_REDUCE_BLANKS
 setopt HIST_VERIFY
 setopt INC_APPEND_HISTORY
