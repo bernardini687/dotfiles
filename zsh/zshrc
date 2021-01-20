@@ -51,10 +51,12 @@ source ~/.aliases
 # source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 #
-# start-up programs
+# personal programs
 #
 # export PALS_DAYS=10
 # pals
+#
+export KEIKO_GOAL=10
 
 #
 # completion
