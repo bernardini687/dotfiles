@@ -2,15 +2,11 @@
 # misc
 #
 alias -g ali='~/.aliases'
-alias path='echo $PATH | tr -s ":" "\n"'
-alias debug_phoenix='log stream --process Phoenix'
-alias j='vim ~/Documents/write/journal/$(date "+%Y_%m_%d.txt")'
+alias -g gbl='~/.gb.log'
 
-#
-# apps
-#
-alias ichrome='open -a "Google Chrome" --args --incognito --disable-login-animations --disable-sync $1'
-alias lclhst='f() { open -a "Google Chrome" --args --incognito --disable-login-animations --disable-sync http://localhost:$1 };f'
+alias path='echo $PATH | tr -s ":" "\n"'
+alias j='vim ~/Documents/write/journal/$(date "+%Y_%m_%d.txt")'
+alias gb='echo $(echo -n $(date "+%H:%M ...."); echo -n $1) >> ~/.gb.log'
 
 #
 # ls
@@ -27,7 +23,7 @@ alias ...='cd ../..'
 #
 # grep
 #
-alias grep='grep -i --color --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
+alias grep='grep -i --color --exclude-dir={.bzr,CVS,.git,.hg,.svn,node_modules}'
 
 #
 # pipes
