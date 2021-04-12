@@ -56,7 +56,7 @@ source ~/.aliases
 # export PALS_DAYS=10
 # pals
 #
-export KEIKO_GOAL=10
+export KEIKO_GOAL=25
 
 #
 # completion
