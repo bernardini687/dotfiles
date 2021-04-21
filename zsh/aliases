@@ -56,7 +56,7 @@ alias initrepo='git init && git add . && git commit -m "init repo"'
 # docker
 #
 alias d='docker'
-alias dc='docker-compose'
+alias dc='docker compose'
 alias dvr='docker volume ls -qf dangling=true | xargs docker volume rm'
 
 #

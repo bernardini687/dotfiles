@@ -75,3 +75,9 @@ eval "$(rbenv init -)"
 export DENO_INSTALL="/Users/oscar/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 
+#
+# go
+#
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+export GOPATH=$GOPATH:$HOME/code/go
