@@ -78,6 +78,6 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 #
 # go
 #
-export GOPATH=$HOME/go
+export GOPATH=$HOME/go # this is the location used by `go get`
 export PATH=$PATH:$GOPATH/bin
-export GOPATH=$GOPATH:$HOME/code/go
+export GOPATH=$GOPATH:$HOME/code/go # this is the workspace where i start go projects
