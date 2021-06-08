@@ -3,7 +3,6 @@
 #
 alias -g ali='~/.aliases'
 alias -g gbl='~/.gb.log'
-alias -g mtg='~/code/scripts/js/mtg'
 
 alias path='echo $PATH | tr -s ":" "\n"'
 alias j='vim ~/Documents/write/journal/$(date "+%Y_%m_%d.txt")'
