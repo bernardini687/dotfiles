@@ -1,5 +1,5 @@
 #
-# nvm 
+# nvm
 #
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -23,7 +23,6 @@ setopt no_case_glob
 #
 export HISTSIZE=8192
 export SAVEHIST=8192 # max save history on logout
-
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_IGNORE_SPACE
 setopt HIST_NO_FUNCTIONS
@@ -33,30 +32,9 @@ setopt HIST_VERIFY
 setopt INC_APPEND_HISTORY
 
 #
-# line editor options
-#
-# bindkey -v
-# bindkey '^A' vi-beginning-of-line
-# bindkey '^E' vi-end-of-line
-# bindkey '^R' history-incremental-search-backward
-
-#
 # aliases
 #
 source ~/.aliases
-
-#
-# syntax highlighting
-#
-# source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-#
-# personal programs
-#
-# export PALS_DAYS=10
-# pals
-#
-export KEIKO_GOAL=40
 
 #
 # completion
@@ -69,7 +47,7 @@ compinit
 #
 eval "$(rbenv init -)"
 
-# 
+#
 # deno
 #
 export DENO_INSTALL="/Users/oscar/.deno"

@@ -1,25 +1,14 @@
 #
 # misc
 #
-alias -g ali='~/.aliases'
-alias -g gbl='~/.gb.log'
-
-alias path='echo $PATH | tr -s ":" "\n"'
-alias j='vim ~/Documents/write/journal/$(date "+%Y_%m_%d.txt")'
-alias gb='echo $(echo -n $(date "+%H:%M ...."); echo -n $1) >> ~/.gb.log'
-alias code='codium'
+alias t='curl -sS https://cannobio.net/datimeteo.txt | jq .temp_c'
+alias ts='date "+%Y_%m_%d"' # timestamp
 
 #
 # ls
 #
 alias ls='ls -G'
 alias lr='ls -hArtl'
-
-#
-# cd
-#
-alias ..='cd ..'
-alias ...='cd ../..'
 
 #
 # grep
@@ -29,11 +18,11 @@ alias grep='grep -i --color --exclude-dir={.bzr,CVS,.git,.hg,.svn,node_modules}'
 #
 # pipes
 #
-alias -g G='| grep'
-alias -g L='| wc -l'
 alias -g C='| pbcopy'
-alias -g T='| tail'
+alias -g G='| grep'
 alias -g H='| head'
+alias -g L='| wc -l'
+alias -g T='| tail'
 
 #
 # brew
@@ -49,7 +38,6 @@ alias be='bundle exec'
 # git
 #
 alias g='git'
-alias initrepo='git init && git add . && git commit -m "init repo"'
 
 #
 # docker
@@ -62,4 +50,3 @@ alias dvr='docker volume ls -qf dangling=true | xargs docker volume rm'
 # npm
 #
 alias nr='npm run'
-

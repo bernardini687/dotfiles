@@ -1,13 +1,11 @@
 [alias]
-  a = add
   s = status -s
-  d = diff
+  a = add
   c = commit -m
   p = push
-  co = checkout
-  br = branch
   l = log --oneline
-  pick = cherry-pick
+  br = branch
+  co = checkout
 
 [core]
   excludesfile = ~/.gitignore
@@ -22,4 +20,3 @@
 
 [hub]
 	protocol = ssh
-
